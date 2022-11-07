@@ -21,6 +21,32 @@ let students = [
 2-  Dobbiamo creare un nuovo array con gli studenti che hanno un totale di voti superiore a 70
 3-  Dobbiamo creare un nuovo array di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120 */
 
+//snack1
+
+let = array2 = [];
+const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
+
+myArray.forEach ((element,index) => {
+
+    if (index >= 2 && index <= 4) {
+        array2.push(element);
+    } 
+});
+
+let array3 = myArray.filter((element,index) => {
+    if (index >= 2 && index <= 4) {
+        return true;
+    }
+    return false;
+});
+
+
+
+console.log(array2)
+console.log(array3)
+
+
+//snack2
 let students = [
     { name: 'Marco', id: 213, grades: 78 },
     { name: 'Paola', id: 110, grades: 96 },
