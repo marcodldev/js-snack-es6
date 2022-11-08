@@ -98,6 +98,7 @@ let h1 = document.getElementById("h1");
 
 let min = 48;
 
+
 let bici = [
     { name: 'bici1', peso: 78 },
     { name: 'bici2', peso: 96 },
@@ -106,7 +107,13 @@ let bici = [
   ]
 ;
 
+const minore = Math.min();
+console.log(minore); 
+
+// console.log(x)
+
 bici.forEach( ( {name, peso} , index)=>{
+
 
     if (peso == min) {
         console.log( name, peso )
