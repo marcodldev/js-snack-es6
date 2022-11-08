@@ -96,6 +96,8 @@ console.log(grades_and_id);
 
 let h1 = document.getElementById("h1");
 
+let min = 48;
+
 let bici = [
     { name: 'bici1', peso: 78 },
     { name: 'bici2', peso: 96 },
@@ -106,7 +108,7 @@ let bici = [
 
 bici.forEach( ( {name, peso} , index)=>{
 
-    if (peso < 70) {
+    if (peso == min) {
         console.log( name, peso )
         h1.innerHTML = `La bici che pesa di meno è ${(name)} con peso ${(peso)} kg`  ;
     }
@@ -114,3 +116,30 @@ bici.forEach( ( {name, peso} , index)=>{
   } )
 
 
+//snack 4
+
+// Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti. Infine usando la destrutturazione creiamo un nuovo array i cui elementi     contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+let squadre = [
+    { name: 'Juventus', punti: 0, falli:0  },
+    { name: 'Milan', punti:0 , falli:0  },
+    { name: 'Manchester', punti:0 , falli:0  },
+    { name: 'Uganda', punti:0 , falli:0  },
+  ]
+;
+
+
+squadre.forEach ( ({punti,falli},index)  => {
+
+    numeroRandomFunc(1,100)
+    console.log(squadre)
+} )
+
+
+
+function numeroRandomFunc(min, max) {
+
+    let numeroRandom = Math.floor(Math.random() * (max - min + min)) + min;
+
+    return numeroRandom;
+}
