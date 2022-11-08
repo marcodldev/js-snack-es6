@@ -96,8 +96,6 @@ console.log(grades_and_id);
 
 let h1 = document.getElementById("h1");
 
-let min = 48;
-
 
 let bici = [
     { name: 'bici1', peso: 78 },
@@ -107,18 +105,17 @@ let bici = [
   ]
 ;
 
-const minore = Math.min();
-console.log(minore); 
+let min = bici[0];
 
-// console.log(x)
+//console.log(min); 
 
 bici.forEach( ( {name, peso} , index)=>{
 
 
-    if (peso == min) {
-        console.log( name, peso )
-        h1.innerHTML = `La bici che pesa di meno è ${(name)} con peso ${(peso)} kg`  ;
-    }
+    if (peso < min.peso) {
+        console.log(( {name, peso} ) ,index)
+        h1.innerHTML = `La bici che pesa di meno è ${(name)} con peso ${(peso)} kg` ;
+    } 
   
   } )
 
