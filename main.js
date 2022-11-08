@@ -92,7 +92,10 @@ const grades_and_id = students.filter((students) => {
 
 console.log(grades_and_id); 
 
-//snack3
+//snack3 Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
+
+let h1 = document.getElementById("h1");
+
 let bici = [
     { name: 'bici1', peso: 78 },
     { name: 'bici2', peso: 96 },
@@ -100,3 +103,14 @@ let bici = [
     { name: 'bici4', peso: 74 },
   ]
 ;
+
+bici.forEach( ( {name, peso} , index)=>{
+
+    if (peso < 70) {
+        console.log( name, peso )
+        h1.innerHTML = `La bici che pesa di meno è ${(name)} con peso ${(peso)} kg`  ;
+    }
+  
+  } )
+
+
