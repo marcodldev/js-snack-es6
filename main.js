@@ -20,6 +20,12 @@ let students = [
 1- Dobbiamo creare delle targhe con il loro nome in maiuscolo. Ci serve quindi un nuovo array di stringhe. Ogni elemento del nuovo array sarà il nome dello studente ma con tutte le lettere maiuscole.
 2-  Dobbiamo creare un nuovo array con gli studenti che hanno un totale di voti superiore a 70
 3-  Dobbiamo creare un nuovo array di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120 */
+/*
+Snack 3
+Creare un array di oggetti: Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso. Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
+Snack4
+Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti. Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti. Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console. */
 
 //snack1
 
@@ -85,3 +91,12 @@ const grades_and_id = students.filter((students) => {
 });
 
 console.log(grades_and_id); 
+
+//snack3
+let bici = [
+    { name: 'bici1', peso: 78 },
+    { name: 'bici2', peso: 96 },
+    { name: 'bici3', peso: 48 },
+    { name: 'bici4', peso: 74 },
+  ]
+;
