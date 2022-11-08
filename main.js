@@ -113,9 +113,14 @@ bici.forEach( ( {name, peso} , index)=>{
 
     if (peso < min.peso) {
         console.log(( {name, peso} ) ,index)
+
+    if (index == 2) {
         h1.innerHTML = `La bici che pesa di meno è ${(name)} con peso ${(peso)} kg` ;
-    } 
+    }
   
+    } 
+
+
   } )
 
 
